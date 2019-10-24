@@ -10,7 +10,7 @@ Install this plugin in the same environment as Datasette to enable the `haversin
 
     $ pip install datasette-haversine
 
-The plugin is built on top of the [haversine]https://github.com/mapado/haversine) library.
+The plugin is built on top of the [haversine](https://github.com/mapado/haversine) library.
 
 ## haversine() to calculate distances
 
