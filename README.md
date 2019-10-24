@@ -14,7 +14,9 @@ The plugin is built on top of the [haversine](https://github.com/mapado/haversin
 
 ## haversine() to calculate distances
 
-    select haversine(lat1, lon1, lat2, lon2);
+```sql
+select haversine(lat1, lon1, lat2, lon2);
+```
 
 This will return the distance in kilometers between the point defined by `(lat1, lon1)` ond the point defined by `(lat2, lon2)`.
 
@@ -29,4 +31,6 @@ By default `haversine()` returns results in km. You can pass an optional third a
 - `nmi` for nautical miles
 - `km` for kilometers (the default)
 
-    select haversine(lat1, lon1, lat2, lon2, 'mi');
+```sql
+select haversine(lat1, lon1, lat2, lon2, 'mi');
+```
