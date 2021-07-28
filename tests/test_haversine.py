@@ -24,9 +24,10 @@ def conn():
         ("km", 341.411),
     ),
 )
-def test_haversine(conn, unit, expected):
+@pytest.mark.parametrize("type", (float, str))
+def test_haversine(conn, unit, expected, type):
     actual = conn.execute(
         "select haversine(?, ?, ?, ?, ?)",
-        [LONDON[0], LONDON[1], PARIS[0], PARIS[1], unit],
+        [type(LONDON[0]), type(LONDON[1]), type(PARIS[0]), type(PARIS[1]), unit],
     ).fetchall()[0][0]
     assert expected == pytest.approx(actual)

@@ -3,7 +3,7 @@ from haversine import haversine
 
 
 def haversine_sql(lat1, lon1, lat2, lon2, unit="km"):
-    return haversine((lat1, lon1), (lat2, lon2), unit=unit)
+    return haversine((float(lat1), float(lon1)), (float(lat2), float(lon2)), unit=unit)
 
 
 @hookimpl
