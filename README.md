@@ -1,8 +1,9 @@
 # datasette-haversine
 
 [![PyPI](https://img.shields.io/pypi/v/datasette-haversine.svg)](https://pypi.org/project/datasette-haversine/)
-[![CircleCI](https://circleci.com/gh/simonw/datasette-haversine.svg?style=svg)](https://circleci.com/gh/simonw/datasette-haversine)
-[![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/simonw/datasette-haversine/blob/master/LICENSE)
+[![Changelog](https://img.shields.io/github/v/release/simonw/datasette-haversine?include_prereleases&label=changelog)](https://github.com/simonw/datasette-haversine/releases)
+[![Tests](https://github.com/simonw/datasette-haversine/workflows/Test/badge.svg)](https://github.com/simonw/datasette-haversine/actions?query=workflow%3ATest)
+[![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/simonw/datasette-haversine/blob/main/LICENSE)
 
 Datasette plugin that adds a custom SQL function for haversine distances
 
