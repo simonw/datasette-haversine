@@ -8,9 +8,9 @@
 Datasette plugin that adds a custom SQL function for haversine distances
 
 Install this plugin in the same environment as Datasette to enable the `haversine()` SQL function.
-
-    $ pip install datasette-haversine
-
+```bash
+datasette install datasette-haversine
+```
 The plugin is built on top of the [haversine](https://github.com/mapado/haversine) library.
 
 ## haversine() to calculate distances
@@ -20,6 +20,18 @@ select haversine(lat1, lon1, lat2, lon2);
 ```
 
 This will return the distance in kilometers between the point defined by `(lat1, lon1)` and the point defined by `(lat2, lon2)`.
+
+## Demo
+
+You can try this function [here using Datasette Lite](https://lite.datasette.io/?install=datasette-haversine#/content?sql=select+haversine%28%0A++40.7128%2C+-74.0060%2C+--+New+York%0A++37.7749%2C+-122.4194%2C+--+San+Francisco%0A++%27mi%27%0A%29+as+distance_in_miles%3B).
+
+```sql
+select haversine(
+  40.7128, -74.0060, -- New York
+  37.7749, -122.4194, -- San Francisco
+  'mi'
+) as distance_in_miles;
+```
 
 ## Custom units
 
