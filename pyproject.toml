@@ -1,0 +1,31 @@
+[project]
+name = "datasette-haversine"
+version = "0.2"
+description = "Datasette plugin that adds a custom SQL function for haversine distances"
+readme = "README.md"
+authors = [{name = "Simon Willison"}]
+license = {text = "Apache License, Version 2.0"}
+classifiers=[
+    "Framework :: Datasette",
+    "License :: OSI Approved :: Apache Software License"
+]
+requires-python = ">=3.8"
+dependencies = [
+    "datasette",
+    "haversine"
+]
+
+[project.urls]
+Homepage = "https://github.com/simonw/datasette-haversine"
+Changelog = "https://github.com/simonw/datasette-haversine/releases"
+Issues = "https://github.com/simonw/datasette-haversine/issues"
+CI = "https://github.com/simonw/datasette-haversine/actions"
+
+[project.entry-points.datasette]
+haversine = "datasette_haversine"
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "strict"
