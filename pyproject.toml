@@ -1,6 +1,6 @@
 [project]
 name = "datasette-haversine"
-version = "0.2"
+version = "0.2.1"
 description = "Datasette plugin that adds a custom SQL function for haversine distances"
 readme = "README.md"
 authors = [{name = "Simon Willison"}]
